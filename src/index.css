@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F8F9FA;
+    font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    word-spacing: 0.08em;
+    line-height: 1.6;
+  }
+}
+
+/* Custom friendly smooth transitions and pulses */
+.bounce-gentle {
+  animation: bounceGentle 2.5s infinite ease-in-out;
+}
+
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
